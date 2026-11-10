@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_17();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -31,7 +31,7 @@ function exercise_01() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log('Hello, World!');
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -49,7 +49,9 @@ function exercise_02() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let myAge = 37;
+  const myName = "Scott";
+  console.log(`My name is ${myName}, and I am ${myAge} years old.`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -76,7 +78,11 @@ function exercise_03() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let sum = num1 + num2;
+  let subtract = num1 - num2;
+  let multiply = num1 * num2;
+  let divide = num1 / num2;
+  console.log(sum, subtract, multiply, divide);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -95,7 +101,13 @@ function exercise_04() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let x;
+  x = 20;
+  console.log(typeof(x));
+  x = "Hello";
+  console.log(typeof(x));
+  x = true;
+  console.log(typeof(x));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -113,7 +125,9 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let isAvailable = true;
+  isAvailable = !true;
+  console.log(isAvailable);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -138,7 +152,13 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let message = "Welcome";
+  let upper = message.toUpperCase();
+  console.log(upper);
+  let lower = message.toLowerCase();
+  console.log(lower);
+  let length = message.length;
+  console.log(length);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -165,7 +185,11 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let name = "Scott";
+  let greeting = `Hello, ${name}! Welcome to JavaScript!`;
+  console.log(greeting);
+
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -186,7 +210,9 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let val1;
+  let val2 = null;
+  console.log(val1, val2);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -206,7 +232,12 @@ function exercise_09() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: "DCC",
+    author: "Matt Dinnamon",
+    publishedYear: 2023
+  };
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -226,7 +257,13 @@ function exercise_10() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+   let book = {
+    title: "DCC",
+    author: "Matt Dinnamon",
+    publishedYear: 2023
+  };
+  console.log(book.title);
+  console.log(book["author"]);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -248,7 +285,14 @@ function exercise_11() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+   let book = {
+    title: "DCC",
+    author: "Matt Dinnamon",
+    publishedYear: 2023
+  };
+  book.publishedYear = 2019;
+  book["genre"] = "LitRPG";
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -267,7 +311,13 @@ function exercise_12() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+   let book = {
+    title: "DCC",
+    author: "Matt Dinnamon",
+    publishedYear: 2023
+  };
+  delete(book.author);
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -298,7 +348,9 @@ function exercise_13() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(original.name);
+  copy.name = "Bob";
+  console.log(original.name);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -318,7 +370,8 @@ function exercise_14() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date();
+  console.log(currentDate);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -340,7 +393,8 @@ function exercise_15() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date();
+  console.log(currentDate.getFullYear(), currentDate.getDate() + 1, currentDate.getDay());
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -365,7 +419,8 @@ function exercise_16() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let birthday = new Date(1989, 2, 23);
+  console.log(birthday.toDateString());
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -392,7 +447,10 @@ function exercise_17() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date();
+  let difference = currentDate - pastDate;
+  let divDifference = difference / (1000 * 60 * 60 * 24);
+  console.log(Math.ceil(divDifference));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -423,7 +481,8 @@ function exercise_18() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log("With Plus Operator: " + msgPart1 + " " + msgPart2 + "!");
+  console.log(`With Template Literal: ${msgPart1} ${msgPart2}!`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -456,7 +515,14 @@ function exercise_19() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(text.includes("JavaScript"));
+  console.log(text.includes("Python"));
+  console.log(text.includes("javascript"));
+
+  /*
+    First log results in true because it is an exact match, the third log is false because there is no javascript in all lowercase. 
+    there is no conversion.
+  */
 
   // CODE IN THE OPEN LINES ABOVE
 }
